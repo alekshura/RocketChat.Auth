@@ -56,12 +56,8 @@ const runbot = async () => {
         console.log('connected and waiting for messages');
     
         // when a message is created in one of the ROOMS, we 
-        // receive it in the processMesssages callback
-    
-        // // greets from the first room in ROOMS 
-        // const sent = await driver.sendToRoom( BOTNAME + ' is listening ...',ROOMS[0]);
-        // console.log('Greeting message sent');
-    
+        // receive it in the processMesssages callback   
+        // const sent = await driver.sendToRoom( BOTNAME + ' is listening ...',ROOMS[0]);   
         setTimeout(task, SCHEDULE_TIMEOUT_IN_SECONDS * 1000);
     } catch (e) {
         captureError(e);

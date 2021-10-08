@@ -41,6 +41,8 @@ function findAuthorizationHeader(headers, name) {
 }
 
 async function resolveUser(headers) {
+	// This is old style passing for account Id
+	// For now best way to share it in JWT claims
 	let accountId = findAuthorizationHeader(headers, 'accountId');
 
 	if (!accountId) {
@@ -147,7 +149,7 @@ async function callCreateToken(userId) {
 	return result;
 }
 
-async function createAuthnToken(db, userId) {
+async function createAuthToken(db, userId) {
 	let result = await callCreateToken(userId);
 
 	let users = db.collection('users');
@@ -186,6 +188,7 @@ function handleLogin(headers, rcUser, userInfo) {
 		rcUser.roles.push('admin');
 	}
 
+	// Use concrete User structure
 	// struct rcUser {
 	// 	id,
 	// 	username,
@@ -230,7 +233,7 @@ async function handleAuth(req, res) {
 }
 
 async function handleToken(req, res) {
-	return handle(req, res, createAuthnToken);
+	return handle(req, res, createAuthToken);
 }
 
 async function generateLoginToken(req, res) {

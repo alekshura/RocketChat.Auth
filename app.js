@@ -52,7 +52,6 @@ app.use(cookieParser());
 	app.use(function (req, res) {
 		console.log(req.path);
 		res.send(req.path);
-		// fs.createReadStream('index.html').pipe(res);
 	});
 	
 	app.listen(process.env.PORT, function () {
