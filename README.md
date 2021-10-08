@@ -1,4 +1,4 @@
-# RocketChat Authorization module
+# <img src="/assets/logoRC.svg" align="left" width="50"> Authorization
 
 ## Intro
 During implementation of corporate Web App one of the requirements was to have a fully functional chat for logged users.
