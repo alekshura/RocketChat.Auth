@@ -2,7 +2,7 @@
 
 ## Intro
 During implementation of corporate Web App one of the requirements was to have a fully functional chat for logged users.
-The good modern Open Source candidate for it was [RockeChat](https://rocket.chat/).
+The good modern Open Source candidate for it was [RockeChat](https://github.com/RocketChat/Rocket.Chat#readme).
 It is fully functional chat, with possibility of online chating, sending images, audio, video streaming, etc.
 
 ## Challenges
