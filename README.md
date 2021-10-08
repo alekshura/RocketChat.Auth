@@ -7,12 +7,11 @@ It is fully functional chat, with possibility of online chating, sending images,
 
 ## Challenges
  - Besides the installation and using the chat one important thing had to be realized: 
-authorization of the users in RocketChat, that already have been authorized in the our Web App.
-Such our authorized users do not exist in RocketChat database or not authorized, thus we needed to handle it.
- - Another thing, is actually RocketChat window with badges on the chat icon and online messages.
-There was simple solution for itinvisible (layered) iframe with RocketChat. 
-It becomes visible by clicking on Web App Chat icon.
-In this way user RocketChat is always online and recevies massages and notifications.
+authorization of the users in RocketChat, that already have been authorized in the Web App.
+These authorized users do not exist in RocketChat database or are not online, thus we needed to handle it.
+ - Another thing, is actually RocketChat window with badges on the Web App chat icon and online receive messages and notifications.
+There was simple solution for it: invisible (layered) iframe with RocketChat. It becomes visible by clicking on Web App Chat icon.
+In this way RocketChat is always opened and user recevies massages and notifications.
 
 ## Authorization
 To authorize uses in RocketChat `auth-service` was created using `nodejs`. It was natural choice because RocketChat also written on `nodejs`
