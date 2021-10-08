@@ -1,0 +1,29 @@
+{
+  "name": "rocket.chat.auth",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@rocket.chat/sdk": "^0.2.9-2",
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "elastic-apm-node": "^3.5.0",
+    "express": "^4.17.1",
+    "intercept-stdout": "^0.1.2",
+    "meteor-sha256": "^1.0.1",
+    "moment": "^2.24.0",
+    "mongodb": "^3.5.5",
+    "node-fetch": "^2.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://repo.pentacomp.pl/scm/git/zpwd-rocketchat-auth"
+  },
+  "keywords": [],
+  "description": "rocket.chat.auth"
+}
