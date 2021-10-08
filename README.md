@@ -1,4 +1,4 @@
-# <img src="/assets/logoRC.svg" align="left" heigth="50"> Authorization
+# <img src="/assets/logoRC.svg" align="left" heigth="100"> Authorization
 
 ## Intro
 During implementation of corporate Web App one of the requirements was to have a fully functional chat for logged users.
