@@ -1,5 +1,8 @@
 # <img src="/assets/logoRC.svg" align="left"> Authorization
 
+![GitHub top language](https://img.shields.io/github/languages/top/alekshura/RocketChat.Auth)
+
+
 ## Intro
 During implementation of corporate Web App one of the requirements was to have a fully functional chat for logged users.
 The good modern Open Source candidate for it was [RocketChat](https://github.com/RocketChat/Rocket.Chat#readme).
