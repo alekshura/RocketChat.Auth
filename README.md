@@ -67,8 +67,10 @@ let user = await users.findOne({ _id: rcUser.id });
 ```
 
 ## Bot
-One of the security requirements for sending messages was to add the possibility of message expiration: when user wants to message disapeared after some date.
-It was achieved with specific message format with adding to it an expiration date and the RocketChat bot that was configured to recognize this date and cleanup such messages:
+One of the security requirements for chat messages was the possibility of message disapering after message expiration date setup by user.
+It was achieved with specific expiration date format sent in message and the RocketChat bot that was used to recognize this format and delete messages that contained suth information.
+
+RocketChat bot has been created in the way: 
 
 ```javascript
 // set up subscriptions - rooms we are interested in listening to
@@ -82,11 +84,12 @@ console.log('connected and waiting for messages');
 // when a message is created in one of the ROOMS, we 
 // receive it in the processMesssages callback
 
-// greets from the first room in ROOMS 
-// const sent = await driver.sendToRoom( BOTNAME + ' is listening ...',ROOMS[0]);
+// const sent = await driver.sendToRoom( BOTNAME + ' is listening ...', ROOMS[0]);
 setTimeout(task, SCHEDULE_TIMEOUT_IN_SECONDS * 1000);
 
 ```
+
+and the `task` method actually does the job.
 
 ## Docker-compose
 To start the service use `docker-compose`
